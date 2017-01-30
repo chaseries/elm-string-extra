@@ -78,6 +78,7 @@ title string =
     |> List.map capitalize
     |> String.join " "
 
+-- Internal
 isOnlyOf : String -> String -> Bool
 isOnlyOf str charset =
   case (String.uncons str) of
