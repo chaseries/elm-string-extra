@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "summary": "The String utilities the standard library forgot.",
+    "summary": "String utilities the standard library forgot",
     "repository": "https://github.com/chaseries/elm-string-extra.git",
     "license": "BSD3",
     "source-directories": [

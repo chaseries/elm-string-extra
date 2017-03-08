@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
+os:
+  - linux
+  - osx
+env:
+  matrix:
+    - ELM_VERSION=0.18.0
+install:
+  - npm install -g elm-test
+
+script:
+  - npm test
