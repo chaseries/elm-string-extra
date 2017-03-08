@@ -23,6 +23,10 @@ all =
         \() -> Expect.equal (Extra.head "") ""
       , test "Extra.tail" <|
         \() -> Expect.equal (Extra.tail "") ""
+      , test "Extra.containsAny" <|
+        \() -> Expect.equal (Extra.containsAny "abc123!" Extra.punctuation) True
+      , test "Extra.excludes" <|
+        \() -> Expect.equal (Extra.excludesAll "abc123!" Extra.punctuation) False
       ]
       , describe "Fuzz test examples, using randomly generated input"
       [ fuzz (list int) "Lists always have positive length" <|
